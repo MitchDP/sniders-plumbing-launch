@@ -1,10 +1,21 @@
 import { Phone, MessageSquare, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-plumbing.jpg";
 
 const Hero = () => {
   return (
-    <section className="hero-gradient section-padding">
-      <div className="container-custom">
+    <section className="hero-gradient section-padding relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-10">
+        <img 
+          src={heroImage}
+          alt="Professional plumber at work"
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent"></div>
+      </div>
+      
+      <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">

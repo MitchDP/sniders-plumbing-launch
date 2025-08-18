@@ -1,11 +1,14 @@
 import { ArrowRight, Droplets, Wrench, Zap, Toilet, Settings, Trash2, Camera, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import drainTools from "@/assets/drain-cleaning-tools.jpg";
+import waterHeaterService from "@/assets/water-heater-service.jpg";
 
 const services = [
   {
     icon: Droplets,
     title: "Drain Cleaning",
-    description: "Professional drain cleaning and unclogging services"
+    description: "Professional drain cleaning and unclogging services",
+    image: drainTools
   },
   {
     icon: Droplets,
@@ -15,7 +18,8 @@ const services = [
   {
     icon: Zap,
     title: "Water Heater Service",
-    description: "Installation, repair, and maintenance of water heaters"
+    description: "Installation, repair, and maintenance of water heaters",
+    image: waterHeaterService
   },
   {
     icon: Toilet,
@@ -67,6 +71,17 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div key={index} className="service-card group">
+              {/* Service Image (if available) */}
+              {service.image && (
+                <div className="mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              )}
+              
               <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4 group-hover:bg-primary/20 transition-colors">
                 <service.icon className="w-6 h-6 text-primary" />
               </div>

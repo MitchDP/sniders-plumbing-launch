@@ -8,13 +8,11 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-primary rounded-lg">
-              <Wrench className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary">Snider's Plumbing</h1>
-              <p className="text-xs text-muted-foreground">Licensed • Bonded • Insured</p>
-            </div>
+            <img 
+              src="/lovable-uploads/436d3fa7-0385-4dd5-a519-45722adeea67.png"
+              alt="Snider's Plumbing & Drain Cleaning LLC Logo"
+              className="h-12 w-auto object-contain"
+            />
           </div>
 
           {/* Call Now Button - Always Visible */}
