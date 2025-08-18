@@ -1,14 +1,11 @@
-import { ArrowRight, Droplets, Wrench, Zap, Toilet, Settings, Trash2, Camera, Phone } from "lucide-react";
+import { ArrowRight, Droplets, Wrench, Zap, Toilet, Settings, Trash2, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import drainTools from "@/assets/drain-cleaning-tools.jpg";
-import waterHeaterService from "@/assets/water-heater-service.jpg";
 
 const services = [
   {
     icon: Droplets,
     title: "Drain Cleaning",
-    description: "Professional drain cleaning and unclogging services",
-    image: drainTools
+    description: "Professional drain cleaning and unclogging services"
   },
   {
     icon: Droplets,
@@ -18,8 +15,7 @@ const services = [
   {
     icon: Zap,
     title: "Water Heater Service",
-    description: "Installation, repair, and maintenance of water heaters",
-    image: waterHeaterService
+    description: "Installation, repair, and maintenance of water heaters"
   },
   {
     icon: Toilet,
@@ -40,11 +36,6 @@ const services = [
     icon: Camera,
     title: "Sewer Line Inspection",
     description: "Camera inspection to diagnose sewer line issues"
-  },
-  {
-    icon: Phone,
-    title: "Emergency Service",
-    description: "24/7 emergency plumbing services when you need us most"
   }
 ];
 
@@ -63,7 +54,7 @@ const Services = () => {
             Professional Plumbing Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From routine maintenance to emergency repairs, we handle all your plumbing needs with expertise and care.
+            From routine maintenance to repairs, we handle all your plumbing needs with expertise and care.
           </p>
         </div>
 
@@ -71,17 +62,6 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div key={index} className="service-card group">
-              {/* Service Image (if available) */}
-              {service.image && (
-                <div className="mb-4 rounded-lg overflow-hidden">
-                  <img 
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              )}
-              
               <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4 group-hover:bg-primary/20 transition-colors">
                 <service.icon className="w-6 h-6 text-primary" />
               </div>

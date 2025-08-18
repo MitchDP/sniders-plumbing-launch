@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <div>CCB #184589</div>
               <div>Family-owned and operated</div>
-              <div>24/7 Emergency Service</div>
+              <div>Mon-Fri: 8am-5pm</div>
             </div>
           </div>
 
@@ -53,15 +53,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Business Hours</h3>
             <div className="space-y-2 text-sm text-primary-foreground/90">
               <div className="flex justify-between">
-                <span>Monday - Saturday:</span>
-                <span>7:00 AM - 7:00 PM</span>
+                <span>Monday - Friday:</span>
+                <span>8:00 AM - 5:00 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Sunday:</span>
-                <span>Emergency Only</span>
-              </div>
-              <div className="text-xs mt-2 text-primary-foreground/70">
-                *Emergency service available 24/7
+                <span>Saturday - Sunday:</span>
+                <span>Closed</span>
               </div>
             </div>
           </div>
