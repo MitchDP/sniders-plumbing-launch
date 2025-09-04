@@ -1,4 +1,5 @@
 import { CheckCircle, Clock, DollarSign, Home, Users } from "lucide-react";
+import serviceVan from "@/assets/service-van.jpg";
 
 const benefits = [
   {
@@ -36,6 +37,17 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
+        {/* Service Van Image */}
+        <div className="mb-12 text-center">
+          <div className="max-w-2xl mx-auto rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src={serviceVan}
+              alt="Snider's Plumbing service vehicle"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center group">
@@ -71,7 +83,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-success" />
-              <span>Mon-Fri 8am-5pm</span>
+              <span>24/7 Emergency Service</span>
             </div>
           </div>
         </div>

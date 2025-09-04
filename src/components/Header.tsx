@@ -10,7 +10,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/436d3fa7-0385-4dd5-a519-45722adeea67.png"
             alt="Snider's Plumbing & Drain Cleaning LLC Logo"
-            className="h-20 w-auto object-contain"
+            className="h-16 w-auto object-contain"
           />
         </div>
       </div>

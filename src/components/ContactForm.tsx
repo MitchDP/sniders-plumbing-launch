@@ -93,6 +93,7 @@ const ContactForm = () => {
                       <SelectItem value="water-heater">Water Heater Service</SelectItem>
                       <SelectItem value="installation">Fixture Installation</SelectItem>
                       <SelectItem value="pipe-replacement">Pipe Replacement</SelectItem>
+                      <SelectItem value="emergency">Emergency Service</SelectItem>
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
@@ -162,20 +163,20 @@ const ContactForm = () => {
                     <Clock className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-primary">Mon-Fri: 8:00am-5:00pm</p>
-                    <p className="text-sm text-muted-foreground">Closed weekends</p>
+                    <p className="font-semibold text-primary">Mon-Sat: 7am-7pm</p>
+                    <p className="text-sm text-muted-foreground">Sun: Emergency only</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Quick Contact CTA */}
-            <div className="bg-primary/5 border border-primary/20 p-6 rounded-xl text-center">
-              <h4 className="font-semibold text-primary mb-2">Need Service Today?</h4>
+            {/* Emergency CTA */}
+            <div className="bg-emergency/5 border border-emergency/20 p-6 rounded-xl text-center">
+              <h4 className="font-semibold text-emergency mb-2">Plumbing Emergency?</h4>
               <p className="text-sm text-muted-foreground mb-4">
-                Call during business hours for same-day service when possible.
+                We offer 24/7 emergency service for urgent plumbing issues.
               </p>
-              <Button className="btn-primary w-full" asChild>
+              <Button className="btn-emergency w-full" asChild>
                 <a href="tel:+15414610166">
                   <Phone className="w-4 h-4" />
                   Call Now: (541) 461-0166

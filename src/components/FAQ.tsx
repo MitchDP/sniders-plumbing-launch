@@ -7,8 +7,8 @@ import {
 
 const faqs = [
   {
-    question: "How quickly can you respond?",
-    answer: "We often provide same-day service during our business hours (Monday-Friday 8am-5pm). For non-urgent issues, we typically schedule within 1-2 business days."
+    question: "Do you offer emergency service?",
+    answer: "Yes! We provide 24/7 emergency plumbing services for urgent issues like burst pipes, major leaks, and sewer backups. Call (541) 461-0166 anytime for emergency service."
   },
   {
     question: "What areas do you cover?", 
@@ -25,6 +25,10 @@ const faqs = [
   {
     question: "Are you licensed and insured?",
     answer: "Yes, we are fully licensed (CCB #184589), bonded, and insured. This protects both you and us, and ensures all work meets Oregon building codes and standards."
+  },
+  {
+    question: "How quickly can you respond?",
+    answer: "We often provide same-day service during business hours (Mon-Sat 7am-7pm). For emergencies, we respond as quickly as possible 24/7."
   },
   {
     question: "Do you work on rental properties?",

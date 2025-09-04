@@ -68,7 +68,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
-              <span>Mon-Fri: 8am-5pm</span>
+              <span>24/7 Emergency Service</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-success rounded-full"></span>
